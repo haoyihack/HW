@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>個人帳號註冊</title>
+		<style>
+			body{
+				background-image: url("/img/96_gif.gif"); 
+			}
+		</style>
+	</head>
+	<body>
+		<p align="center"><font face="標楷體" size="6"><b>個人帳號註冊</b></font></p>
+		<a href='index.php'>返回首頁</a>
+		<hr>
+		<form action="extra.php" method="get">
+		姓名:<input type="text" name="name"><br><br>
+		帳號:<input type="text" name="AC"><br><br>
+		密碼:<input type="password" name="pass"><br><br>
+		<input type="radio" name="sex" value="male" checked>男
+		<input type="radio" name="sex" value="female">女<br><br>
+		你的身分是:
+		<select name="cars">
+			<option value="student">學生</option>
+			<option value="teacher">老師</option>
+			<option value="staff">職員</option>
+			<option value="other">其它</option>
+		</select><br><br>
+		各人簡介:<br>
+		<textarea name="mail" rows="5" cols="20"></textarea><br><br>
+		<input type="submit" value="送出">
+		<input type="reset" value="清除">
+		</form>
+	</body>
+</html>
